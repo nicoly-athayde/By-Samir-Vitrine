@@ -21,7 +21,6 @@ C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\rjsmcshtml.dswa.cache.j
 C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\scopedcss\bundle\By-Samir-Vitrine.styles.css
 C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\scopedcss\projectbundle\By-Samir-Vitrine.bundle.scp.css
-C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\compressed\vnw1fl0k8m-{0}-e57ezx9b6s-e57ezx9b6s.gz
 C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\compressed\jsriihsvbd-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\compressed\5ch917sw5g-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\compressed\24tt6xw552-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -95,3 +94,5 @@ C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\refint\By-Samir-Vitrine
 C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\By-Samir-Vitrine.pdb
 C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\By-Samir-Vitrine.genruntimeconfig.cache
 C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\ref\By-Samir-Vitrine.dll
+C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\By-Samir-Vitrine.sourcelink.json
+C:\Users\etec\Desktop\By-Samir-Vitrine\obj\Debug\net10.0\compressed\vnw1fl0k8m-{0}-m7sjj6uhsi-m7sjj6uhsi.gz

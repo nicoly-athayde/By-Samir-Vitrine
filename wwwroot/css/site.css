@@ -1,51 +1,165 @@
-:root {
-    --primary: #e91e63;     /* Rosa moda - mude se no Figma for diferente */
-    --secondary: #f8c1d4;
-    --dark: #1a1a1a;
-    --light: #f8f9fa;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
+    background: #f2f2f2;
     color: #333;
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+/* BANNER */
+
+.banner-section {
+    padding: 15px 0 30px;
 }
 
-/* Hero - Banner principal */
-.hero {
-    height: 85vh;
-    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
-                url('/img/banners/banner-principal.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-.hero-content {
-    max-width: 700px;
-}
-
-.product-card {
-    border: none;
-    border-radius: 12px;
+#bannerPrincipal {
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    transition: all 0.4s ease;
 }
 
-.product-card:hover {
-    transform: scale(1.04);
-    box-shadow: 0 15px 35px rgba(233, 30, 99, 0.2);
+#bannerPrincipal img {
+    width: 100%;
+    display: block;
 }
 
-.price {
-    color: var(--primary);
+.carousel-item {
+    transition: transform .8s ease-out;
+}
+
+/* VITRINE */
+
+.vitrine-section {
+    padding: 20px 0 50px;
+    text-align: center;
+}
+
+.titulo-vitrine {
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.subtitulo-vitrine {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+/* PRODUTOS */
+
+.produto-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.10);
+    transition: .3s;
+}
+
+.produto-card:hover {
+    transform: translateY(-4px);
+}
+
+.produto-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+/* RESERVA */
+
+.reserva-section {
+    background: white;
+    padding: 60px 0;
+}
+
+.reserva-section h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.reserva-section p {
+    max-width: 700px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
     font-weight: 600;
-    font-size: 1.35rem;
+}
+
+.btn-whatsapp:hover {
+    color: white;
+    background: #1ebe5d;
+}
+
+/* LOCALIZAÇÃO */
+
+.localizacao-section {
+    padding: 50px 0;
+}
+
+.localizacao-section h4 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dados-loja p {
+    margin-bottom: 5px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #8b8b8b;
+    color: white;
+    padding: 40px 0;
+}
+
+footer h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .titulo-vitrine{
+        font-size:32px;
+    }
+
+    .produto-card img{
+        height:180px;
+    }
+
+    .localizacao-section h4{
+        font-size:22px;
+    }
+
+    .reserva-section h3{
+        font-size:26px;
+    }
+
 }
