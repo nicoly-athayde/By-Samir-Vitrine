@@ -1,0 +1,51 @@
+:root {
+    --primary: #e91e63;     /* Rosa moda - mude se no Figma for diferente */
+    --secondary: #f8c1d4;
+    --dark: #1a1a1a;
+    --light: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Hero - Banner principal */
+.hero {
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+                url('/img/banners/banner-principal.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.product-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 15px 35px rgba(233, 30, 99, 0.2);
+}
+
+.price {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.35rem;
+}
