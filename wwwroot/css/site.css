@@ -4,69 +4,74 @@ body {
     color: #333;
 }
 
-/* ======================================
-   HEADER
-====================================== */
+/* HEADER */
 
 .navbar-custom{
     background:#000;
-    height:85px;
+    height:800px; /* era 140px ou 150px */
     width:100%;
 }
 
 .navbar-wrapper{
     width:100%;
-    max-width:1400px;
-    margin:0 auto;
-    padding:0 30px;
-
-    height:85px;
+    height:100%;
 
     display:flex;
     align-items:center;
+    justify-content:space-between;
+
+    padding:0 12px;
 }
 
+/* BLOCO ESQUERDO */
 .menu-esquerdo{
-    flex:1;
+    width:45%;
     display:flex;
     align-items:center;
-    justify-content:center;
-    gap:28px;
+    justify-content:flex-end;
+    gap:80px; /* diminuiu */
 }
 
+/* LOGO */
 .logo-centro{
-    width:240px;
+    width:40%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .logo-centro img{
-    height:80px;
+    height:200px; /* era 150px */
     width:auto;
-    display:block;
 }
+
+/* BLOCO DIREITO */
 .menu-direito{
-    flex:1;
+    width:45%;
     display:flex;
+    justify-content:flex-end;
     align-items:center;
-    justify-content:center;
-    gap:22px;
+    gap:20px; /* diminuiu */
 }
 
 .menu-esquerdo a,
 .menu-direito a{
     color:#fff;
     text-decoration:none;
-    font-size:12px;
-    white-space:nowrap;
+    font-size:30px; /* era 14px ou 16px */
+    font-weight:500;
+    letter-spacing: 2px;
 }
 
 .menu-direito i{
     color:#fff;
-    font-size:18px;
+    font-size:25px;
 }
 
 .icone-usuario{
-    width:42px;
-    height:42px;
+    width:30px;
+    height:30px;
 
     border:2px solid #fff;
     border-radius:50%;
@@ -74,14 +79,11 @@ body {
     display:flex;
     align-items:center;
     justify-content:center;
-
-    flex-shrink:0;
 }
 
 .icone-usuario i{
     font-size:20px;
 }
-
 /* BANNER */
 
 .banner-section {
@@ -90,12 +92,14 @@ body {
 }
 
 #bannerPrincipal {
-    overflow: hidden;
+    max-width: 1440px;
+    margin: 20px auto 0;
 }
 
 #bannerPrincipal img {
     width: 100%;
-    display: block;
+    height: 650px;
+    object-fit: cover;
 }
 
 .carousel-item {
@@ -105,8 +109,9 @@ body {
 /* VITRINE */
 
 .vitrine-section {
-    padding: 20px 0 50px;
+    padding: 60px 0 100px;
     text-align: center;
+    background: #f2f2f2;
 }
 
 .titulo-vitrine {
@@ -122,31 +127,56 @@ body {
     margin-bottom: 50px;
 }
 
-/* PRODUTOS */
-
-.produto-card {
-    background: white;
-    border-radius: 8px;
+/* PRODUTOS - VITRINE */
+.produto-card{
+    position: relative;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,.10);
+    border-radius: 10px;
+    background: #fff;
     transition: .3s;
 }
 
 .produto-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    /* Brilho bege embaixo no hover */
+    filter: brightness(1.05);
 }
 
-.produto-card img {
+.produto-card img{
     width: 100%;
-    height: 260px;
+    height: 500px;
     object-fit: cover;
     display: block;
 }
 
+/* BRILHO BEGE */
+.produto-card::after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+
+    width:100%;
+    height:0;
+
+    background:linear-gradient(
+        transparent,
+        rgba(207,181,139,.45)
+    );
+
+    opacity:0;
+    transition:.4s ease;
+}
+
+.produto-card:hover::after{
+    height:45%;
+    opacity:1;
+}
 /* RESERVA */
 
 .reserva-section {
-    background: white;
+    background: #f2f2f2;
     padding: 60px 0;
 }
 
@@ -195,7 +225,7 @@ body {
 /* RODAPÉ */
 
 footer {
-    background: #b7b7b7;
+    background: #f2f2f2;
     color: white;
     padding: 12px 15px;
     margin-top: 0;
@@ -227,15 +257,15 @@ footer {
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 40px;
 }
 
 .social-icons i {
-    font-size: 24px;
+    font-size: 40px;
 }
 .navbar-custom {
     background: #000;
-    height: 45px;
+    height: 80px;
     padding: 0 20px;
 }
 
@@ -250,14 +280,14 @@ footer {
 .menu-direito {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 40px;
 }
 
 .menu-esquerdo a,
 .menu-direito a {
     color: #fff;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .logo-centro {
@@ -267,7 +297,7 @@ footer {
 }
 
 .logo-centro img {
-    height: 38px;
+    height: 80px;
 }
 
 footer {
@@ -325,5 +355,4 @@ footer {
     .reserva-section h3{
         font-size:26px;
     }
-
 }
