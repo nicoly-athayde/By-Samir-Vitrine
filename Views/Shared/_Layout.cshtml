@@ -24,14 +24,21 @@
 
             <!-- MENU ESQUERDO -->
 
-            <div class="menu-esquerdo">
+        <div class="menu-esquerdo">
+            <a asp-controller="Home"
+            asp-action="SobreNos"
+            class="sobre-nos">
+                Sobre Nós
+            </a>
 
-                <a href="#">Sobre Nós</a>
-                <a href="#">Feminina</a>
-                <a href="#">Masculina</a>
-                <a href="#">Acessórios</a>
+            <a href="#" class="feminina">
+                Feminina
+            </a>
 
-            </div>
+            <a href="#" class="masculina">
+                Masculina
+            </a>
+        </div>
 
             <!-- LOGO -->
 
@@ -48,19 +55,18 @@
 
             <!-- MENU DIREITO -->
 
-            <div class="menu-direito">
+           <div class="menu-direito">
+                <a href="#" class="privacidade">Política de Privacidade</a>
+                <a href="#" class="acessorios">Acessórios</a>
 
-                <a href="#">
-                    Política de Privacidade
-                </a>
-
-                <a href="/Produtos">
+                <a href="/Produtos" class="icone-carrinho">
                     <i class="fas fa-bag-shopping"></i>
                 </a>
 
-                <div class="icone-usuario">
+                <a href="#" class="icone-usuario">
                     <i class="fas fa-user"></i>
-                </div>
+                </a>
+            </div>
 
             </div>
 
@@ -117,11 +123,11 @@
 
                 <div class="social-icons">
 
-                    <a href="#">
+                    <a href="https://www.instagram.com/lojas_bysamir/">
                         <i class="fab fa-instagram"></i>
                     </a>
 
-                    <a href="#">
+                    <a href="https://www.facebook.com/bysamirbb/photos/?ref=page_internal">
                         <i class="fab fa-facebook-f"></i>
                     </a>
 

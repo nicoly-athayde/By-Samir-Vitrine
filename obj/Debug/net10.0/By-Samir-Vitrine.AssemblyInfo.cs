@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("By-Samir-Vitrine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff3a688abfad5585d41b185d9108a4585263d032")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7be4217298377f198a058445e411810e262c6ae7")]
 [assembly: System.Reflection.AssemblyProductAttribute("By-Samir-Vitrine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("By-Samir-Vitrine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
