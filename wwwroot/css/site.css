@@ -538,3 +538,806 @@ footer {
         }
     }
 }
+
+
+
+/* ============================================================
+   PÁGINA SOBRE NÓS - BY SAMIR
+   Cole TODO este bloco no FINAL de wwwroot/css/site.css.
+   Todas as regras estão isoladas em .pagina-sobre e não alteram a Home.
+============================================================ */
+
+.pagina-sobre {
+    --sobre-preto: #080808;
+    --sobre-texto: #202020;
+    --sobre-cinza: #d9d9d9;
+    --sobre-fundo: #f2f2f2;
+    width: 100%;
+    overflow: hidden;
+    background: var(--sobre-fundo);
+    color: var(--sobre-texto);
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagina-sobre *,
+.pagina-sobre *::before,
+.pagina-sobre *::after {
+    box-sizing: border-box;
+}
+
+.pagina-sobre .container-sobre {
+    width: min(1180px, calc(100% - 48px));
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pagina-sobre h1,
+.pagina-sobre h2,
+.pagina-sobre h3,
+.pagina-sobre p,
+.pagina-sobre address {
+    margin-top: 0;
+}
+
+.pagina-sobre .titulo-secao {
+    margin-bottom: 0;
+    color: var(--sobre-preto);
+    font-size: clamp(2rem, 3vw, 3.1rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.pagina-sobre .texto-secao {
+    margin-bottom: 0;
+    color: #3f3f3f;
+    font-size: .95rem;
+    line-height: 1.8;
+}
+
+/* BANNER */
+.pagina-sobre .sobre-banner {
+    padding: 26px 0 52px;
+}
+
+.pagina-sobre .sobre-banner__imagem {
+    display: block;
+    width: 100%;
+    height: 390px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center 42%;
+}
+
+/* NOSSA HISTÓRIA */
+.pagina-sobre .historia-section {
+    padding: 0 0 78px;
+}
+
+.pagina-sobre .historia-grid {
+    display: grid;
+    grid-template-columns: minmax(280px, .85fr) minmax(0, 1.55fr);
+    gap: clamp(54px, 8vw, 135px);
+    align-items: start;
+}
+
+/* NOSSOS VALORES */
+.pagina-sobre .valores-section {
+    padding: 0 0 90px;
+}
+
+.pagina-sobre .valores-grid {
+    display: grid;
+    grid-template-columns: minmax(360px, 1.15fr) minmax(300px, 1fr);
+    gap: clamp(55px, 8vw, 135px);
+    align-items: center;
+}
+
+.pagina-sobre .valores-logo {
+    display: flex;
+    min-height: 280px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .14);
+}
+
+.pagina-sobre .logo-valores {
+    display: block;
+    width: min(62%, 300px) !important;
+    max-width: 300px !important;
+    height: auto !important;
+    max-height: 180px;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    object-fit: contain;
+}
+
+.pagina-sobre .valores-conteudo .titulo-secao {
+    margin-bottom: 18px;
+}
+
+/* =========================================
+   EQUIPE: 3 CARDS EM CIMA E 2 EMBAIXO
+========================================= */
+
+.pagina-sobre .equipe-section {
+    padding: 0 0 92px;
+}
+
+.pagina-sobre .equipe-section .titulo-secao {
+    margin-bottom: 36px;
+}
+
+.pagina-sobre .equipe-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+/* Cada card ocupa duas das seis colunas:
+   3 cards por linha */
+.pagina-sobre .equipe-grid > .membro-card {
+    grid-column: span 2;
+
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 16px;
+    align-items: start;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 190px;
+    margin: 0;
+    padding: 20px;
+
+    border: 0;
+    border-radius: 7px;
+    background: #d9d9d9;
+    box-shadow: none;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Quarto card: começa na segunda coluna,
+   centralizando a segunda linha */
+.pagina-sobre
+.equipe-grid
+> .membro-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+/* Quinto card: fica ao lado do quarto */
+.pagina-sobre
+.equipe-grid
+> .membro-card:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+.pagina-sobre
+.equipe-grid
+> .membro-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.10);
+}
+
+.pagina-sobre
+.equipe-grid
+> .membro-card img {
+    display: block;
+
+    width: 72px !important;
+    height: 72px !important;
+    max-width: 72px !important;
+
+    margin: 0 !important;
+    border-radius: 50% !important;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.pagina-sobre
+.equipe-grid
+> .membro-card
+.membro-conteudo {
+    min-width: 0;
+}
+
+.pagina-sobre
+.equipe-grid
+> .membro-card h3 {
+    margin: 1px 0 9px;
+
+    color: #111;
+    font-size: 0.96rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.pagina-sobre
+.equipe-grid
+> .membro-card p {
+    margin: 0;
+
+    color: #333;
+    font-size: 0.78rem;
+    line-height: 1.55;
+
+    overflow-wrap: anywhere;
+}
+
+/* TABLET: dois por linha */
+
+@media (max-width: 991.98px) {
+    .pagina-sobre .equipe-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .pagina-sobre
+    .equipe-grid
+    > .membro-card {
+        grid-column: auto;
+    }
+
+    .pagina-sobre
+    .equipe-grid
+    > .membro-card:nth-child(4),
+    .pagina-sobre
+    .equipe-grid
+    > .membro-card:nth-child(5) {
+        grid-column: auto;
+    }
+
+    /* Se sobra apenas o quinto card,
+       o card fica centralizado */
+    .pagina-sobre
+    .equipe-grid
+    > .membro-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        width: calc(50% - 11px);
+        justify-self: center;
+    }
+}
+
+/* CELULAR: um por linha */
+
+@media (max-width: 575.98px) {
+    .pagina-sobre .equipe-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .pagina-sobre
+    .equipe-grid
+    > .membro-card {
+        grid-column: auto;
+        min-height: 0;
+    }
+
+    .pagina-sobre
+    .equipe-grid
+    > .membro-card:last-child:nth-child(odd) {
+        grid-column: auto;
+        width: 100%;
+    }
+}
+
+/* LOCALIZAÇÃO */
+.pagina-sobre .localizacao-sobre {
+    padding: 0 0 76px;
+}
+
+.pagina-sobre .localizacao-grid {
+    display: grid;
+    grid-template-columns: minmax(280px, .8fr) minmax(420px, 1.2fr);
+    gap: clamp(60px, 9vw, 150px);
+    align-items: start;
+}
+
+.pagina-sobre .localizacao-conteudo .titulo-secao {
+    margin-bottom: 28px;
+}
+
+.pagina-sobre .localizacao-conteudo h3 {
+    margin: 24px 0 8px;
+    color: #111;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.pagina-sobre .localizacao-conteudo address,
+.pagina-sobre .localizacao-conteudo p {
+    margin-bottom: 0;
+    color: #333;
+    font-size: .85rem;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+.pagina-sobre .mapa-link {
+    position: relative;
+    display: block;
+    min-height: 330px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #242424;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .16);
+    text-decoration: none;
+}
+
+.pagina-sobre .mapa-link::after {
+    content: 'Abrir no Google Maps';
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    padding: 10px 14px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, .78);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(7px);
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+.pagina-sobre .mapa-link:hover::after,
+.pagina-sobre .mapa-link:focus-visible::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pagina-sobre .localizacao-sobre__mapa {
+    display: block;
+    width: 100% !important;
+    height: 330px !important;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform .25s ease, filter .25s ease;
+}
+
+.pagina-sobre .mapa-link:hover .localizacao-sobre__mapa,
+.pagina-sobre .mapa-link:focus-visible .localizacao-sobre__mapa {
+    transform: scale(1.02);
+    filter: brightness(.9);
+}
+
+/* TABLET */
+@media (max-width: 991.98px) {
+    .pagina-sobre .sobre-banner__imagem {
+        height: 330px;
+    }
+
+    .pagina-sobre .historia-grid,
+    .pagina-sobre .valores-grid,
+    .pagina-sobre .localizacao-grid {
+        gap: 42px;
+    }
+
+    .pagina-sobre .valores-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pagina-sobre .equipe-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pagina-sobre .localizacao-grid {
+        grid-template-columns: .85fr 1.15fr;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 767.98px) {
+    .pagina-sobre .container-sobre {
+        width: min(100% - 28px, 560px);
+    }
+
+    .pagina-sobre .sobre-banner {
+        padding: 16px 0 38px;
+    }
+
+    .pagina-sobre .sobre-banner__imagem {
+        height: 230px;
+        object-position: center;
+    }
+
+    .pagina-sobre .historia-section,
+    .pagina-sobre .valores-section,
+    .pagina-sobre .equipe-section {
+        padding-bottom: 58px;
+    }
+
+    .pagina-sobre .historia-grid,
+    .pagina-sobre .valores-grid,
+    .pagina-sobre .localizacao-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .pagina-sobre .titulo-secao {
+        font-size: 1.7rem;
+    }
+
+    .pagina-sobre .texto-secao {
+        font-size: .84rem;
+        line-height: 1.7;
+    }
+
+    .pagina-sobre .valores-logo {
+        min-height: 220px;
+    }
+
+    .pagina-sobre .equipe-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .pagina-sobre .membro-card {
+        min-height: 0;
+    }
+
+    .pagina-sobre .localizacao-sobre {
+        padding-bottom: 44px;
+    }
+
+    .pagina-sobre .localizacao-sobre__mapa,
+    .pagina-sobre .mapa-link {
+        min-height: 250px;
+        height: 250px !important;
+    }
+
+    .pagina-sobre .mapa-link::after {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .pagina-sobre .membro-card {
+        grid-template-columns: 58px minmax(0, 1fr);
+        padding: 16px;
+    }
+
+    .pagina-sobre .membro-card img {
+        width: 58px !important;
+        height: 58px !important;
+    }
+}
+
+/* CATEGORIAS FEMININAS — isolado da Home e do Sobre Nós */
+.pagina-categoria-feminina {
+    width: 100%;
+    min-height: 70vh;
+    padding: 54px 0 48px;
+    background: #fff;
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+}
+.pagina-categoria-feminina * { box-sizing: border-box; }
+.categoria-container {
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto;
+}
+.produtos-femininos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: clamp(38px, 6vw, 92px);
+    row-gap: 58px;
+}
+.produto-feminino-card { min-width: 0; text-align: center; }
+.produto-feminino-link { display: block; color: #111; text-decoration: none; }
+.produto-feminino-imagem {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #eee;
+    box-shadow: 0 2px 7px rgba(0,0,0,.12);
+}
+.produto-feminino-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease, filter .3s ease;
+}
+.produto-feminino-link:hover img,
+.produto-feminino-link:focus-visible img { transform: scale(1.025); filter: brightness(.96); }
+.produto-feminino-card h2 {
+    margin: 12px 0 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.produto-preco {
+    margin: 20px 0 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+@media (max-width: 767.98px) {
+    .pagina-categoria-feminina { padding: 34px 0 40px; }
+    .categoria-container { width: min(100% - 28px, 620px); }
+    .produtos-femininos-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 18px; }
+    .produto-feminino-card h2 { font-size: .78rem; }
+    .produto-preco { margin-top: 12px; font-size: .88rem; }
+}
+@media (max-width: 390px) {
+    .produtos-femininos-grid { grid-template-columns: 1fr; }
+}
+
+/* SUBMENU FEMININA */
+.menu-feminina-item { position: relative; display: flex; align-items: center; height: 80px; }
+.menu-feminina-botao {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: #fff;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.submenu-feminina {
+    position: absolute;
+    z-index: 1000;
+    top: 80px;
+    left: -20px;
+    display: none;
+    min-width: 340px;
+    height: 86px;
+    align-items: stretch;
+    padding: 0;
+    background: #050505;
+    box-shadow: 0 9px 20px rgba(0,0,0,.18);
+}
+.menu-feminina-item.submenu-aberto .submenu-feminina { display: flex; }
+.submenu-feminina a {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 110px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 19px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+.submenu-feminina a + a { border-left: 1px solid rgba(255,255,255,.58); }
+.submenu-feminina a:hover,
+.submenu-feminina a:focus-visible { background: #191919; }
+@media (max-width: 768px) {
+    .menu-feminina-item { height: auto; }
+    .submenu-feminina { top: 100%; left: 0; min-width: min(340px, 92vw); }
+}
+
+/* ========================================
+   SUBMENU FEMININA
+======================================== */
+
+.menu-feminina-item {
+    position: relative;
+
+    display: flex;
+    height: 80px;
+
+    align-items: center;
+
+    margin-right: 70px;
+}
+
+.menu-feminina-botao {
+    appearance: none;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+    color: #fff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+.menu-feminina-botao:hover,
+.menu-feminina-botao:focus-visible {
+    color: #cfb58b;
+}
+
+.submenu-feminina {
+    position: absolute;
+    z-index: 9999;
+
+    top: 80px;
+    left: -25px;
+
+    display: none;
+    width: 345px;
+    height: 86px;
+
+    padding: 0;
+
+    background: #050505;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.20);
+}
+
+/* Esta classe é adicionada pelo JavaScript */
+
+.menu-feminina-item.submenu-aberto
+.submenu-feminina {
+    display: flex;
+}
+
+.submenu-feminina a {
+    display: flex;
+    flex: 1 1 0;
+
+    min-width: 0;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 18px;
+
+    color: #fff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.submenu-feminina a + a {
+    border-left:
+        1px solid rgba(255, 255, 255, 0.55);
+}
+
+.submenu-feminina a:hover,
+.submenu-feminina a:focus-visible {
+    color: #fff;
+    background: #202020;
+}
+
+/* SUBMENU MASCULINA */
+.menu-masculina-item {
+    position: relative;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    margin-right: -30px;
+}
+.menu-masculina-botao {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.menu-masculina-botao:hover,
+.menu-masculina-botao:focus-visible { color: #cfb58b; }
+.submenu-masculina {
+    position: absolute;
+    z-index: 9999;
+    top: 80px;
+    left: -35px;
+    display: none;
+    width: 342px;
+    height: 76px;
+    padding: 0;
+    background: #050505;
+    box-shadow: 0 8px 20px rgba(0,0,0,.20);
+}
+.menu-masculina-item.submenu-aberto .submenu-masculina { display: flex; }
+.submenu-masculina a {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 22px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.submenu-masculina a + a { border-left: 1px solid rgba(255,255,255,.55); }
+.submenu-masculina a:hover,
+.submenu-masculina a:focus-visible { color: #fff; background: #202020; }
+
+/* PÁGINAS MASCULINAS */
+.pagina-categoria-masculina {
+    width: 100%;
+    min-height: 70vh;
+    padding: 48px 0 54px;
+    background: #fff;
+    color: #111;
+    font-family: "Poppins", sans-serif;
+}
+.pagina-categoria-masculina * { box-sizing: border-box; }
+.categoria-masculina-container {
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto;
+}
+.produtos-masculinos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: clamp(38px, 6vw, 92px);
+    row-gap: 58px;
+}
+.produto-masculino-card { min-width: 0; text-align: center; }
+.produto-masculino-link { display: block; color: #111; text-decoration: none; }
+.produto-masculino-imagem {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #eee;
+    box-shadow: 0 3px 8px rgba(0,0,0,.18);
+}
+.produto-masculino-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease, filter .3s ease;
+}
+.produto-masculino-link:hover img,
+.produto-masculino-link:focus-visible img { transform: scale(1.025); filter: brightness(.96); }
+.produto-masculino-card h2 {
+    max-width: 240px;
+    margin: 14px auto 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.45;
+}
+.produto-masculino-preco {
+    margin: 10px 0 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+@media (max-width: 767.98px) {
+    .menu-masculina-item { height: auto; margin-right: 0; }
+    .submenu-masculina { top: 100%; left: 0; width: min(342px, 92vw); }
+    .pagina-categoria-masculina { padding: 34px 0 42px; }
+    .categoria-masculina-container { width: min(100% - 28px, 620px); }
+    .produtos-masculinos-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 18px; }
+    .produto-masculino-card h2 { font-size: .83rem; }
+    .produto-masculino-preco { font-size: .9rem; }
+}
+@media (max-width: 390px) {
+    .produtos-masculinos-grid { grid-template-columns: 1fr; }
+}

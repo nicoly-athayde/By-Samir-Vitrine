@@ -1,151 +1,125 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - By Samir</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
-
 <body>
-
-    <!-- HEADER -->
-
     <header class="navbar-custom">
-
         <div class="navbar-wrapper">
+            <div class="menu-esquerdo">
+                <a asp-controller="Home" asp-action="SobreNos" class="sobre-nos">Sobre Nós</a>
+                <div class="menu-feminina-item">
 
-            <!-- MENU ESQUERDO -->
+                    <button type="button"
+                            class="menu-feminina-botao"
+                            aria-expanded="false"
+                            aria-controls="submenuFeminina">
+                        Feminina
+                    </button>
 
-        <div class="menu-esquerdo">
-            <a asp-controller="Home"
-            asp-action="SobreNos"
-            class="sobre-nos">
-                Sobre Nós
-            </a>
+                    <div id="submenuFeminina"
+                        class="submenu-feminina">
 
-            <a href="#" class="feminina">
-                Feminina
-            </a>
+                        <a asp-controller="Feminina"
+                        asp-action="Blusas">
+                            Blusas
+                        </a>
 
-            <a href="#" class="masculina">
-                Masculina
-            </a>
+                        <a asp-controller="Feminina"
+                        asp-action="Vestidos">
+                            Vestidos
+                        </a>
+
+                        <a asp-controller="Feminina"
+                        asp-action="Calcas">
+                            Calças
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="menu-masculina-item">
+                    <button type="button"
+                            class="menu-masculina-botao"
+                            aria-expanded="false"
+                            aria-controls="submenuMasculina">
+                        Masculina
+                    </button>
+
+                <div id="submenuMasculina" class="submenu-masculina">
+                    <a asp-controller="Masculina" asp-action="Blusas">Blusas</a>
+                    <a asp-controller="Masculina" asp-action="Bermudas">Bermudas</a>
+                </div>
+            </div>
         </div>
-
-            <!-- LOGO -->
 
             <div class="logo-centro">
-
-                <a href="/">
-
-                    <img src="~/img/logo/logo.png"
-                         alt="By Samir" />
-
+                <a asp-controller="Home" asp-action="Index">
+                    <img src="~/img/logo/logo.png" alt="By Samir" />
                 </a>
-
             </div>
 
-            <!-- MENU DIREITO -->
-
-           <div class="menu-direito">
+            <div class="menu-direito">
                 <a href="#" class="privacidade">Política de Privacidade</a>
                 <a href="#" class="acessorios">Acessórios</a>
-
-                <a href="/Produtos" class="icone-carrinho">
-                    <i class="fas fa-bag-shopping"></i>
+                <a href="/Produtos" class="icone-carrinho" aria-label="Produtos">
+                    <i class="fas fa-bag-shopping" aria-hidden="true"></i>
                 </a>
-
-                <a href="#" class="icone-usuario">
-                    <i class="fas fa-user"></i>
+                <a href="#" class="icone-usuario" aria-label="Área do usuário">
+                    <i class="fas fa-user" aria-hidden="true"></i>
                 </a>
             </div>
-
-            </div>
-
         </div>
-
     </header>
-
-    <!-- CONTEÚDO -->
 
     <main>
         @RenderBody()
     </main>
 
-    <!-- RODAPÉ -->
-
     <footer>
-
         <div class="footer-grid">
-
             <div>
-
                 <h6>NAVEGAÇÃO</h6>
-
-                <a href="#">Sobre Nós</a>
+                <a asp-controller="Home" asp-action="SobreNos">Sobre Nós</a>
                 <a href="#">Feminina</a>
                 <a href="#">Masculina</a>
                 <a href="#">Acessórios</a>
                 <a href="#">Política de Privacidade</a>
                 <a href="#">Política de Devolução</a>
-
             </div>
-
             <div>
-
                 <h6>RESERVAS PELO WHATSAPP</h6>
-
                 <p>Parcelamos no cartão 💳</p>
                 <p>Aceitamos PIX</p>
-
             </div>
-
             <div>
-
                 <h6>CONTATO</h6>
-
                 <p>(14) 99899-1313</p>
                 <p>contato@bysamir.com.br</p>
-
             </div>
-
             <div>
-
                 <h6>REDES SOCIAIS</h6>
-
                 <div class="social-icons">
-
-                    <a href="https://www.instagram.com/lojas_bysamir/">
-                        <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/lojas_bysamir/" aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
                     </a>
-
-                    <a href="https://www.facebook.com/bysamirbb/photos/?ref=page_internal">
-                        <i class="fab fa-facebook-f"></i>
+                    <a href="https://www.facebook.com/bysamirbb/photos/?ref=page_internal" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-
     </footer>
 
-    <!-- SCRIPTS -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="~/js/site.js" asp-append-version="true"></script>
-
-    @RenderSection("Scripts", required: false)
-
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

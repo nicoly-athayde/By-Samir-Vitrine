@@ -2,153 +2,178 @@
     ViewData["Title"] = "Sobre Nós";
 }
 
-<section class="sobre-banner">
-
-    <div class="container">
-
-        <img src="~/img/sobre/banner-equipe.jpg"
-             alt="Equipe By Samir">
-
-    </div>
-
-</section>
-
-<section class="historia-section">
-
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-md-5">
-
-                <h2>Nossa História</h2>
-
-            </div>
-
-            <div class="col-md-7">
-
-                <p>
-                    A By Samir nasceu com o propósito de oferecer
-                    moda de qualidade, unindo estilo, elegância e
-                    atendimento personalizado para cada cliente.
-                    Ao longo dos anos, construímos uma relação de
-                    confiança com nossa comunidade, tornando-nos
-                    referência em moda feminina, masculina e acessórios.
-                </p>
-
-            </div>
-
+<div class="pagina-sobre">
+    <section class="sobre-banner" aria-label="Equipe By Samir">
+        <div class="container-sobre">
+            <img src="~/img/pessoas/sobrenos.jpeg"
+                 asp-append-version="true"
+                 class="sobre-banner__imagem"
+                 alt="Equipe da loja By Samir" />
         </div>
+    </section>
 
-    </div>
+    <section class="historia-section" aria-labelledby="titulo-historia">
+        <div class="container-sobre historia-grid">
+            <h1 id="titulo-historia" class="titulo-secao">Nossa História</h1>
+            <p class="texto-secao">
+                A By Samir nasceu com o propósito de oferecer moda de qualidade,
+                unindo estilo, elegância e atendimento personalizado para cada cliente.
+                Ao longo dos anos, construímos uma relação de confiança com nossa comunidade,
+                tornando-nos referência em moda feminina, masculina e acessórios.
+            </p>
+        </div>
+    </section>
 
-</section>
-
-<section class="valores-section">
-
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-md-6">
-
+    <section class="valores-section" aria-labelledby="titulo-valores">
+        <div class="container-sobre valores-grid">
+            <div class="valores-logo">
                 <img src="~/img/logo/logo.png"
+                     asp-append-version="true"
                      class="logo-valores"
-                     alt="By Samir">
-
+                     alt="Logotipo da By Samir" />
             </div>
-
-            <div class="col-md-6">
-
-                <h2>Nossos Valores</h2>
-
-                <p>
-                    Valorizamos a qualidade, o respeito aos clientes,
-                    a transparência e o compromisso com a excelência.
-                    Buscamos proporcionar uma experiência única,
-                    oferecendo produtos selecionados e um atendimento
-                    acolhedor para todos.
+            <div class="valores-conteudo">
+                <h2 id="titulo-valores" class="titulo-secao">Nossos Valores</h2>
+                <p class="texto-secao">
+                    Valorizamos a qualidade, o respeito aos clientes, a transparência
+                    e o compromisso com a excelência. Buscamos proporcionar uma experiência
+                    única, oferecendo produtos selecionados e um atendimento acolhedor para todos.
                 </p>
-
             </div>
+        </div>
+    </section>
+
+    <section class="equipe-section" aria-labelledby="titulo-equipe">
+<section class="equipe-section" aria-labelledby="titulo-equipe">
+    <div class="container-sobre">
+
+        <h2 id="titulo-equipe" class="titulo-secao">
+            Nossa Equipe
+        </h2>
+
+        <div class="equipe-grid">
+
+            <!-- CARD 1 -->
+            <article class="membro-card">
+                <img src="~/img/equipe/maria.jpg"
+                     asp-append-version="true"
+                     alt="Foto de Maria Eduarda"
+                     loading="lazy" />
+
+                <div class="membro-conteudo">
+                    <h3>Maria Eduarda</h3>
+
+                    <p>
+                        Com profissionais experientes e apaixonados
+                        por moda, estamos aqui para oferecer um
+                        atendimento personalizado e as melhores
+                        dicas de estilo.
+                    </p>
+                </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="membro-card">
+                <img src="~/img/equipe/leonardo.jpg"
+                     asp-append-version="true"
+                     alt="Foto de Leonardo"
+                     loading="lazy" />
+
+                <div class="membro-conteudo">
+                    <h3>Leonardo</h3>
+
+                    <p>
+                        Nossos colaboradores são essenciais para
+                        o sucesso da nossa loja. Seja bem-vindo à
+                        família By Samir!
+                    </p>
+                </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="membro-card">
+                <img src="~/img/equipe/vera.jpg"
+                     asp-append-version="true"
+                     alt="Foto de Vera"
+                     loading="lazy" />
+
+                <div class="membro-conteudo">
+                    <h3>Vera</h3>
+
+                    <p>
+                        Pesquisa, testes e levantamento de
+                        requisitos.
+                    </p>
+                </div>
+            </article>
+
+            <!-- CARD 4 -->
+            <article class="membro-card">
+                <img src="~/img/equipe/leticia.jpg"
+                     asp-append-version="true"
+                     alt="Foto de Letícia"
+                     loading="lazy" />
+
+                <div class="membro-conteudo">
+                    <h3>Letícia</h3>
+
+                    <p>
+                        Com profissionais experientes e apaixonados
+                        por moda, estamos aqui para oferecer um
+                        atendimento personalizado e as melhores
+                        dicas de estilo.
+                    </p>
+                </div>
+            </article>
+
+            <!-- CARD 5 -->
+            <article class="membro-card">
+                <img src="~/img/equipe/samir.jpg"
+                     asp-append-version="true"
+                     alt="Foto de Samir"
+                     loading="lazy" />
+
+                <div class="membro-conteudo">
+                    <h3>Samir</h3>
+
+                    <p>
+                        Proprietário da By Samir, dedicado a oferecer
+                        atendimento acolhedor e produtos de qualidade.
+                    </p>
+                </div>
+            </article>
 
         </div>
-
     </div>
-
 </section>
 
-<section class="equipe-section">
-
-    <div class="container">
-
-        <h2>Nossa Equipe</h2>
-
-        <div class="row g-4">
-
-            <div class="col-lg-4 col-md-6">
-                <div class="membro-card">
-                    <img src="~/img/equipe/maria.jpg">
-                    <h5>Maria Eduarda</h5>
-                    <p>Desenvolvimento Front-End e Design.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="membro-card">
-                    <img src="~/img/equipe/leonardo.jpg">
-                    <h5>Leonardo</h5>
-                    <p>Documentação e desenvolvimento do projeto.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="membro-card">
-                    <img src="~/img/equipe/vitor.jpg">
-                    <h5>Vitor</h5>
-                    <p>Pesquisa, testes e levantamento de requisitos.</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="localizacao-sobre">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-6">
-
-                <h3>Localização</h3>
-
+    <section class="localizacao-sobre" aria-labelledby="titulo-localizacao">
+        <div class="container-sobre localizacao-grid">
+            <div class="localizacao-conteudo">
+                <h2 id="titulo-localizacao" class="titulo-secao">Localização</h2>
+                <h3>Visite-nos</h3>
+                <address>
+                    Rua 1º de Março, 159 - Centro<br />
+                    Barra Bonita - SP, CEP 17340-000
+                </address>
+                <h3>Encontre-nos</h3>
                 <p>
-                    <strong>Visite-nos</strong><br>
-                    Barra Bonita - SP
+                    Estamos localizados em Barra Bonita, oferecendo atendimento próximo
+                    e personalizado aos nossos clientes.
                 </p>
-
-                <p>
-                    Estamos localizados em Barra Bonita,
-                    oferecendo atendimento próximo e
-                    personalizado aos nossos clientes.
-                </p>
-
             </div>
 
-            <div class="col-md-6">
-
-                <img src="~/img/sobre/mapa.png"
-                     class="img-fluid"
-                     alt="Mapa">
-
-            </div>
-
+            <a class="mapa-link"
+               href="https://www.google.com/maps/search/?api=1&query=Rua%201%C2%BA%20de%20Mar%C3%A7o%2C%20159%2C%20Barra%20Bonita%20-%20SP%2C%2017340-000"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Abrir a localização da By Samir no Google Maps">
+                <img src="~/img/banners/mapa.jpeg"
+                     asp-append-version="true"
+                     class="localizacao-sobre__mapa"
+                     alt="Mapa da localização da By Samir"
+                     loading="lazy" />
+            </a>
         </div>
-
-    </div>
-
-</section>
+    </section>
+</div>
