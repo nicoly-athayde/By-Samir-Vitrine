@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="utf-8" />
@@ -89,10 +88,14 @@
                 <h6>NAVEGAÇÃO</h6>
                 <a asp-controller="Home" asp-action="SobreNos">Sobre Nós</a>
                 <a href="#">Feminina</a>
+
                 <a href="#">Masculina</a>
+
                 <a href="#">Acessórios</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Política de Devolução</a>
+
+                <a asp-controller="Home" asp-action="Privacy">
+                    Política de Privacidade e Devolução
+                </a>
             </div>
             <div>
                 <h6>RESERVAS PELO WHATSAPP</h6>
