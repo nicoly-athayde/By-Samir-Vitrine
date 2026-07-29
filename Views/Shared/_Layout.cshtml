@@ -66,8 +66,16 @@
             </div>
 
             <div class="menu-direito">
-                <a href="#" class="privacidade">Política de Privacidade</a>
-                <a href="#" class="acessorios">Acessórios</a>
+                <a asp-controller="Home"
+                asp-action="Privacy"
+                class="privacidade">
+                    Política de Privacidade
+                </a>
+                <a asp-controller="Acessorios"2
+                asp-action="Index"
+                class="acessorios">
+                Acessórios
+                </a>
                 <a href="/Produtos" class="icone-carrinho" aria-label="Produtos">
                     <i class="fas fa-bag-shopping" aria-hidden="true"></i>
                 </a>
@@ -91,10 +99,16 @@
 
                 <a href="#">Masculina</a>
 
-                <a href="#">Acessórios</a>
+                <a asp-controller="Acessorios"
+                asp-action="Index">
+                    Acessórios
+                </a>
 
-                <a asp-controller="Home" asp-action="Privacy">
-                    Política de Privacidade e Devolução
+
+                <a asp-controller="Home"
+                asp-action="Privacy"
+                class="privacidade">
+                    Política de Privacidade
                 </a>
             </div>
             <div>
