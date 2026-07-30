@@ -539,14 +539,6 @@ footer {
     }
 }
 
-
-
-/* ============================================================
-   PÁGINA SOBRE NÓS - BY SAMIR
-   Cole TODO este bloco no FINAL de wwwroot/css/site.css.
-   Todas as regras estão isoladas em .pagina-sobre e não alteram a Home.
-============================================================ */
-
 .pagina-sobre {
     --sobre-preto: #080808;
     --sobre-texto: #202020;
@@ -1056,10 +1048,10 @@ footer {
     font-weight: 400;
     line-height: 1.4;
 }
-.produto-preco {
-    margin: 20px 0 0;
-    font-size: 1rem;
+.produto-info .produto-preco {
+    font-size: 38px;
     font-weight: 700;
+    margin-bottom: 35px;
 }
 @media (max-width: 767.98px) {
     .pagina-categoria-feminina { padding: 34px 0 40px; }
@@ -1343,415 +1335,71 @@ footer {
 }
 
 /* =========================================================
-   POLÍTICA DE PRIVACIDADE E DEVOLUÇÃO
-   ========================================================= */
+   POLÍTICA DE PRIVACIDADE
+========================================================= */
 
-.pagina-politica {
-    --politica-marrom: #5d3728;
-    --politica-marrom-escuro: #352018;
-    --politica-bege: #f2e8da;
-    --politica-bege-claro: #faf7f2;
-    --politica-dourado: #b58a56;
-    --politica-texto: #4a403b;
-    --politica-borda: #ded2c5;
-
-    background-color: var(--politica-bege-claro);
-    color: var(--politica-texto);
-    font-family: inherit;
+.privacy-page {
+    background: #E7E4E4;
+    min-height: calc(100vh - 180px);
+    padding: 25px 0 40px;
 }
 
-.container-politica {
-    width: min(1120px, calc(100% - 40px));
-    margin-inline: auto;
-}
-
-/* CABEÇALHO */
-
-.politica-cabecalho {
-    position: relative;
-    padding: 95px 0 85px;
-    overflow: hidden;
-    color: #ffffff;
-    text-align: center;
-    background:
-        linear-gradient(
-            135deg,
-            rgba(42, 24, 18, 0.98),
-            rgba(96, 56, 40, 0.94)
-        );
-}
-
-.politica-cabecalho::before,
-.politica-cabecalho::after {
-    position: absolute;
-    content: "";
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-}
-
-.politica-cabecalho::before {
-    top: -180px;
-    left: -130px;
-    width: 420px;
-    height: 420px;
-}
-
-.politica-cabecalho::after {
-    right: -100px;
-    bottom: -220px;
-    width: 480px;
-    height: 480px;
-}
-
-.politica-cabecalho .container-politica {
-    position: relative;
-    z-index: 1;
-}
-
-.politica-cabecalho__detalhe {
-    display: inline-block;
-    margin-bottom: 18px;
-    color: #e5c49b;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-}
-
-.politica-cabecalho h1 {
-    max-width: 820px;
-    margin: 0 auto 20px;
-    color: #ffffff;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(2.1rem, 5vw, 4.3rem);
-    font-weight: 500;
-    line-height: 1.08;
-}
-
-.politica-cabecalho__introducao {
-    max-width: 630px;
+.privacy-container {
+    max-width: 1200px;
     margin: 0 auto;
-    color: rgba(255, 255, 255, 0.83);
-    font-size: 1.05rem;
-    line-height: 1.75;
+    padding: 0 20px;
 }
 
-.politica-cabecalho__atualizacao {
-    margin: 25px 0 0;
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 0.85rem;
-}
-
-/* CONTEÚDO */
-
-.politica-conteudo {
-    padding: 80px 0 100px;
-}
-
-.politica-layout {
-    display: grid;
-    grid-template-columns: 250px minmax(0, 1fr);
-    gap: 65px;
-    align-items: start;
-}
-
-/* ÍNDICE */
-
-.politica-indice {
-    position: sticky;
-    top: 30px;
-}
-
-.politica-indice__caixa {
-    padding: 28px;
-    background-color: #ffffff;
-    border: 1px solid var(--politica-borda);
-    border-radius: 4px;
-    box-shadow: 0 12px 35px rgba(53, 32, 24, 0.06);
-}
-
-.politica-indice h2 {
-    margin: 0 0 20px;
-    color: var(--politica-marrom-escuro);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.25rem;
-}
-
-.politica-indice nav {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.politica-indice a {
-    position: relative;
-    padding: 9px 0 9px 15px;
-    color: #695d56;
-    font-size: 0.88rem;
-    line-height: 1.35;
-    text-decoration: none;
-    transition:
-        color 0.2s ease,
-        transform 0.2s ease;
-}
-
-.politica-indice a::before {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 5px;
-    height: 5px;
-    content: "";
-    background-color: var(--politica-dourado);
-    border-radius: 50%;
-    transform: translateY(-50%);
-}
-
-.politica-indice a:hover {
-    color: var(--politica-marrom);
-    transform: translateX(3px);
-}
-
-/* SEÇÕES */
-
-.politica-artigo {
-    min-width: 0;
-}
-
-.politica-secao {
-    display: grid;
-    grid-template-columns: 45px minmax(0, 1fr);
-    gap: 20px;
-    padding: 0 0 48px;
-    margin: 0 0 48px;
-    border-bottom: 1px solid var(--politica-borda);
-    scroll-margin-top: 30px;
-}
-
-.politica-secao__numero {
-    padding-top: 8px;
-    color: var(--politica-dourado);
-    font-size: 0.76rem;
+.privacy-container h1 {
+    color: #111;
+    font-size: 48px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    line-height: 1.2;
 }
 
-.politica-secao h2 {
-    margin: 0 0 23px;
-    color: var(--politica-marrom-escuro);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.55rem, 3vw, 2.15rem);
-    font-weight: 500;
-    line-height: 1.25;
+.privacy-container p {
+    color: #222;
+    font-size: 22px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 28px;
 }
 
-.politica-secao p {
-    margin: 0 0 17px;
-    color: var(--politica-texto);
-    font-size: 0.98rem;
-    line-height: 1.85;
-}
+/* TABLETS */
 
-.politica-secao p:last-child {
-    margin-bottom: 0;
-}
+@media (max-width: 992px) {
 
-.politica-lista {
-    display: grid;
-    gap: 12px;
-    padding: 4px 0 5px;
-    margin: 0 0 20px;
-    list-style: none;
-}
-
-.politica-lista li {
-    position: relative;
-    padding-left: 25px;
-    color: var(--politica-texto);
-    line-height: 1.7;
-}
-
-.politica-lista li::before {
-    position: absolute;
-    top: 0.68em;
-    left: 2px;
-    width: 7px;
-    height: 7px;
-    content: "";
-    background-color: var(--politica-dourado);
-    border-radius: 50%;
-}
-
-/* DESTAQUE */
-
-.politica-destaque {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    padding: 28px 32px;
-    margin: 0 0 55px;
-    color: var(--politica-marrom-escuro);
-    background-color: var(--politica-bege);
-    border-left: 4px solid var(--politica-dourado);
-}
-
-.politica-destaque__icone {
-    display: grid;
-    flex: 0 0 38px;
-    width: 38px;
-    height: 38px;
-    color: #ffffff;
-    font-weight: 700;
-    background-color: var(--politica-dourado);
-    border-radius: 50%;
-    place-items: center;
-}
-
-.politica-destaque p {
-    margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.08rem;
-    line-height: 1.65;
-}
-
-/* CONTATO */
-
-.politica-contato {
-    padding: 0;
-    margin-bottom: 0;
-    border-bottom: 0;
-}
-
-.politica-contato__opcoes {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-    margin-top: 28px;
-}
-
-.politica-contato__item {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    min-width: 0;
-    padding: 22px;
-    color: var(--politica-texto);
-    text-decoration: none;
-    background-color: #ffffff;
-    border: 1px solid var(--politica-borda);
-    border-radius: 3px;
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease,
-        transform 0.2s ease;
-}
-
-a.politica-contato__item:hover {
-    color: var(--politica-texto);
-    border-color: var(--politica-dourado);
-    box-shadow: 0 10px 25px rgba(53, 32, 24, 0.08);
-    transform: translateY(-2px);
-}
-
-.politica-contato__item:last-child {
-    grid-column: 1 / -1;
-}
-
-.politica-contato__item span {
-    color: var(--politica-dourado);
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-}
-
-.politica-contato__item strong {
-    overflow-wrap: anywhere;
-    color: var(--politica-marrom-escuro);
-    font-size: 0.92rem;
-    line-height: 1.5;
-}
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 900px) {
-    .politica-layout {
-        grid-template-columns: 1fr;
-        gap: 50px;
+    .privacy-container h1 {
+        font-size: 40px;
     }
 
-    .politica-indice {
-        position: static;
-    }
-
-    .politica-indice__caixa {
-        padding: 25px;
-    }
-
-    .politica-indice nav {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        column-gap: 25px;
+    .privacy-container p {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 600px) {
-    .container-politica {
-        width: min(100% - 28px, 1120px);
+/* CELULARES */
+
+@media (max-width: 768px) {
+
+    .privacy-page {
+        padding: 20px 0 30px;
     }
 
-    .politica-cabecalho {
-        padding: 70px 0 65px;
+    .privacy-container {
+        padding: 0 16px;
     }
 
-    .politica-cabecalho h1 {
-        font-size: 2.25rem;
+    .privacy-container h1 {
+        font-size: 30px;
+        margin-bottom: 25px;
     }
 
-    .politica-cabecalho__introducao {
-        font-size: 0.95rem;
-    }
-
-    .politica-conteudo {
-        padding: 50px 0 70px;
-    }
-
-    .politica-indice nav {
-        grid-template-columns: 1fr;
-    }
-
-    .politica-secao {
-        grid-template-columns: 1fr;
-        gap: 8px;
-        padding-bottom: 38px;
-        margin-bottom: 38px;
-    }
-
-    .politica-secao__numero {
-        padding: 0;
-    }
-
-    .politica-secao h2 {
-        margin-bottom: 18px;
-        font-size: 1.65rem;
-    }
-
-    .politica-secao p,
-    .politica-lista li {
-        font-size: 0.94rem;
-    }
-
-    .politica-destaque {
-        align-items: flex-start;
-        padding: 23px 20px;
-    }
-
-    .politica-contato__opcoes {
-        grid-template-columns: 1fr;
-    }
-
-    .politica-contato__item:last-child {
-        grid-column: auto;
+    .privacy-container p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 20px;
     }
 }
 
@@ -1936,4 +1584,247 @@ a.politica-contato__item:hover {
         margin-top: 9px;
         font-size: 13px;
     }
+}
+
+/* ===================================
+   MENU HEADER
+=================================== */
+
+header a {
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #D9B37A !important;
+}
+
+header a.active {
+    color: #D9B37A !important;
+}
+
+/* ======================================
+   LOGIN
+====================================== */
+
+.login-page {
+    background: #E7E4E4;
+    min-height: calc(100vh - 180px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 0;
+}
+
+.login-container {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 20px;
+}
+
+.login-imagem img {
+    width: 430px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.login-formulario {
+    width: 430px;
+
+    background: #dfe2e6;
+
+    padding: 34px 35px;
+
+    border-radius: 0 12px 12px 0;
+}
+
+.campo-form {
+    margin-bottom: 6px;
+}
+
+.campo-form label {
+    display: block;
+
+    color: #222;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+}
+
+.campo-form input {
+    width: 100%;
+
+    height: 36px;
+
+    border: none;
+
+    background: #fff;
+
+    padding: 0 12px;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+
+    outline: none;
+}
+
+.campo-form input:focus {
+    border: 1px solid #D9B37A;
+}
+
+.btn-login {
+    width: 100%;
+    height: 42px;
+
+    border: none;
+
+    background: #000;
+
+    color: #fff;
+
+    font-weight: 600;
+
+    margin-top: 15px;
+
+    transition: .3s;
+}
+
+.btn-login:hover {
+    background: #D9B37A;
+    color: #000;
+}
+
+/* ======================================
+   BANNER LOGIN
+====================================== */
+
+.login-banner {
+    width: 430px;
+    height: 500px;
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 12px 0 0 12px;
+}
+
+#carouselLogin {
+    width: 100%;
+    height: 100%;
+}
+
+#carouselLogin .carousel-inner {
+    height: 100%;
+}
+
+#carouselLogin .carousel-item {
+    height: 100%;
+}
+
+#carouselLogin img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* ======================================
+   PRODUTO INDIVIDUAL
+====================================== */
+
+.produto-page {
+    background: #E7E4E4;
+    min-height: calc(100vh - 180px);
+    padding: 60px 0;
+}
+
+.produto-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    padding: 0 30px;
+}
+
+.produto-imagem img {
+    width: 420px;
+    border-radius: 10px;
+    display: block;
+}
+
+.produto-info {
+    max-width: 420px;
+}
+
+.produto-info h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.produto-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.produto-preco {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.btn-carrinho {
+    border: none;
+    background: #000;
+
+    color: #fff;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.btn-carrinho:hover {
+    background: #D9B37A;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+
+    .produto-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .produto-imagem img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .produto-info {
+        text-align: center;
+    }
+}
+.pagina-categoria-feminina .produto-preco {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    margin-top: 8px !important;
+    margin-bottom: 0 !important;
 }

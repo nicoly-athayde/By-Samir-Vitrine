@@ -27,12 +27,36 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3Nvcmlvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Feminina/BataAssimetricaBranca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVtaW5pbmFcQmF0YUFzc2ltZXRyaWNhQnJhbmNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Feminina/BataAssimetricaVerde.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVtaW5pbmFcQmF0YUFzc2ltZXRyaWNhVmVyZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Feminina/Blusas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVtaW5pbmFcQmx1c2FzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Feminina/BodyRendado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVtaW5pbmFcQm9keVJlbmRhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Feminina/Calcas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVtaW5pbmFcQ2FsY2FzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Feminina/CroppedCaju.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVtaW5pbmFcQ3JvcHBlZENhanUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Feminina/CroppedLemon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVtaW5pbmFcQ3JvcHBlZExlbW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Feminina/MalhaFria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVtaW5pbmFcTWFsaGFGcmlhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Feminina/Vestidos.cshtml]
@@ -41,6 +65,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/etec/Desktop/By-Samir-Vitrine/Views/Home/Privacy.cshtml]

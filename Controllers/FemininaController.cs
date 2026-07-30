@@ -7,5 +7,12 @@ namespace BySamir.Controllers
         public IActionResult Blusas() => View();
         public IActionResult Calcas() => View();
         public IActionResult Vestidos() => View();
+
+        public IActionResult CroppedCaju() => View();
+        public IActionResult BataAssimetricaVerde() => View();
+        public IActionResult CroppedLemon() => View();
+        public IActionResult MalhaFria() => View();
+        public IActionResult BodyRendado() => View();
+        public IActionResult BataAssimetricaBranca() => View();
     }
 }
