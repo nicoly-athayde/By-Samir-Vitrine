@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\etec\\Desktop\\By-Samir-Vitrine\\By-Samir-Vitrine.csproj": {}
+    "C:\\Users\\etec\\Desktop\\By-Samir-Vitrine\\by-samir-vitrine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\etec\\Desktop\\By-Samir-Vitrine\\By-Samir-Vitrine.csproj": {
+    "C:\\Users\\etec\\Desktop\\By-Samir-Vitrine\\by-samir-vitrine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\etec\\Desktop\\By-Samir-Vitrine\\By-Samir-Vitrine.csproj",
-        "projectName": "By-Samir-Vitrine",
-        "projectPath": "C:\\Users\\etec\\Desktop\\By-Samir-Vitrine\\By-Samir-Vitrine.csproj",
+        "projectUniqueName": "C:\\Users\\etec\\Desktop\\By-Samir-Vitrine\\by-samir-vitrine.csproj",
+        "projectName": "by-samir-vitrine",
+        "projectPath": "C:\\Users\\etec\\Desktop\\By-Samir-Vitrine\\by-samir-vitrine.csproj",
         "packagesPath": "C:\\Users\\etec\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\etec\\Desktop\\By-Samir-Vitrine\\obj\\",
         "projectStyle": "PackageReference",
